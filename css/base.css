@@ -1,0 +1,63 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td{ 
+    margin:0;
+    padding:0; 
+    box-sizing: border-box;
+}
+body, button, input, select, textarea { 
+    font:14px/100%  Microsoft YaHei, arial, \5b8b\4f53;
+}
+h1, h2, h3, h4, h5, h6{
+     font-size:100%; 
+}
+small{
+     font-size:12px; 
+}
+ul, ol { 
+    list-style:none; 
+}
+a { 
+    -webkit-tap-highlight-color: transparent;
+    text-decoration:none;
+    color:#000;
+}
+a:hover { 
+    text-decoration:underline; 
+}
+sup {
+     vertical-align:text-top; 
+}
+sub{ 
+    vertical-align:text-bottom;
+}
+
+img {
+     border:0;
+     vertical-align: middle;
+}
+button, input, select, textarea { 
+    font-size:100%; 
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* 公共样式 */
+.Hbgc {
+    /* 头部和按钮背景黄色 */
+    background-color: #ff841d;
+}
+.bgc {
+    /* 模块头部黄色 */
+    background-color: #ff9000;
+}
+.bc {
+    /* 字体黄色 */
+    color: #ff9000;
+}
+.clearfix::before,.clearfix::after{
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}

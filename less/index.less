@@ -1,0 +1,345 @@
+// 头部区域
+@mainColor: #0086da;
+#header {
+    >.navbar-default {
+        // height: 80px;
+        padding: 0;
+        line-height: 80px !important;
+        background-color: #fff;
+        border-bottom: none;
+        >.box{
+            z-index: 1000;
+            position:fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            .navbar-header {
+                height: 80px;   
+                line-height: 80px;
+                .navbar-toggle{
+                    margin-top: 20px;
+                }
+                a.navbar-brand {
+                    line-height: 80px;
+                    // padding:15px 15px;
+                    >img {
+                        height: 50px;
+                    }
+                }
+            }
+            ul.navbar-nav {
+                li {
+                    &.active {
+                        box-sizing: border-box;
+                        a {
+                            border-bottom: 4px solid @mainColor;
+                            // height: 76px;
+                            color: @mainColor;
+                            background-color: #fff;
+                          
+                        }
+                    }
+                    a {
+                        font-size: 15px;
+                        line-height: 80px;
+                        padding: 0 15px;
+                        display: block;
+                    }
+                    a:hover{
+                        color:#C0C0C0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 解决方案开始
+#project {
+    margin-top: 20px;
+    text-align: center;
+    .project-top {
+        >i.icon-diandeng {
+            font-size: 36px;
+            color: @mainColor;
+        }
+        span.project-text {
+            font-size: 17px;
+            font-weight: 700;
+        }
+        p {
+            color: #ccc;
+        }
+    }
+}
+
+#content {
+    text-align: center;
+    >.container {
+        >ul {
+           
+            >li {
+                    // width:100%;
+                    // height:auto;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    &:hover {
+                        animation: box 1s linear;
+                    }
+                    @keyframes box {
+                        0% {
+                            transform: rotate(0deg);
+                        }
+                        100% {
+                            transform: rotate(450deg);
+                        }
+                    }
+                }
+                i {
+                    margin: 0 auto;
+                    display: block;
+                    font-size: 64px;
+                    line-height: 140px;
+                    color: #fff;
+                    // width: 170px;
+                    // height: 170px;
+                    border: 15px solid #f0f0f0;
+                    background-color: @mainColor;
+                }
+            }
+            span {
+                font-weight: 500;
+                margin-top: 15px;
+                display: block;
+            }
+        }
+    }
+}
+//客户案例
+#case {
+    .case-top {
+        padding-top: 30px;
+      
+        background-color: #ccc;
+        text-align: center;
+        .Customer{
+            margin-top: 5px;
+            color: #999;
+            padding-bottom: 20px;
+            margin:0;
+        }
+        span.case-text {
+            margin-top: 20px;
+            padding-top: 10px;
+            font-size: 26px;
+            font-weight: 700;
+        }
+    }
+    #picuture{
+        padding:0;
+        margin: 0;
+        >li{
+          
+            padding: 0;
+            overflow:hidden;
+            .picimg{
+              
+              >a{
+
+                  display:block;
+                 
+                img{
+                  
+                  width: 100%;
+                  height:auto;
+                }
+              
+            }
+               
+            }
+            .pic-box{
+                width:100%;
+                position:absolute;
+                top: 0;
+                left:0;
+                bottom:0;
+            
+                opacity:0;
+                 .pic-text{
+                    position:absolute;
+                    left:0;
+                     width: 100%;
+                     bottom:80px;
+                    text-align:center;
+                      h3{   
+                //  margin-top:130px;   
+                 display:block;       
+                font-weight:normal;          
+                font-size: 17px;    
+                text-align:center;
+                color:#fff;
+                 }     
+               }
+            }
+            
+               } 
+            
+            li:hover .pic-box{
+                opacity:1;
+                background-color:rgba(0,0,0,0.7);
+            }
+                   
+            }
+    }
+//问题开始
+#solutions{
+    width: 100%;
+    background-color:#128abc;
+    height: 110px;
+    padding:20px 55px;
+    .solutions-left{
+        float:left;
+        line-height:40px;
+         span{
+             font-size: 20px;
+             font-weight:500;
+             color:#fff;
+         }   
+         p{
+           color:#fff;  
+         }
+
+    }
+    .solutions-right{
+        float:right;
+       
+        
+        a{
+            display:block;
+            span.see-more{
+             border: 2px solid #fff;
+      padding: 7px 10px;
+    font-size: 13px;
+    color: #fff;
+    margin-top: 18px;
+    display: inline-block;
+    border-radius: 4px;
+            }
+           &:hover span{
+               background-color:#fff;
+               color:@mainColor;
+           }
+        }
+    }    
+}
+#news{
+   .news-top{
+    //    position: relative;
+       text-align:center;
+       width: 100%;
+       line-height:30px;
+
+       a{
+           display: block;
+           text-decoration:none;
+           h3{
+               text-align:center;
+               font-size: 26px;
+                  color:#000;
+           }
+            p{
+              color:#999;
+              font-size: 17px;
+               margin-top:-5px;
+            }
+          
+       }
+   } 
+    .new-content{
+        .new-img{
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+         
+        }
+        .new-text{
+            >a{
+        color:#000;
+            text-decoration:none;
+            span{
+                  font-size: 18px;
+
+            }
+                .news-time{
+                    margin-top: 10px;
+                 font-size: 14px; 
+                }.new-words{
+                    margin-top: 10px;
+                }
+            }
+        }           
+    }
+   
+   .new-content:hover .new-img img{
+
+       transition:all 1s ease-in;
+       transform:scale(1.4);
+   } 
+}
+// 服务客服
+#serve{
+    text-align:center;
+    background-color: #f0eeed;
+    margin-top: 30px;
+    h3{
+        padding-top: 30px;
+    }
+        p{
+         
+            color:#999;
+            font-size: 17px;   
+         padding-bottom:30px;   
+         margin-bottom: 0;
+    }
+}      
+    .serve-bottom{
+       
+        width:100%;
+        height:auto;
+        background:url(../images/bg-pic2.png) no-repeat;
+        // background-color: #2d2d2d;
+        // overflow:hidden;
+        padding: 5% 5% 25px 5%;
+        background-size: 100% 100%;
+        >ul{
+          
+            li{
+              
+               .serve-title {
+                   font-size: 18px;
+                   color:#fff;
+                   margin-bottom: 20px;
+                   font-weight:bold;
+               }
+               .serve-word {
+                   color:#fff;
+                   p{
+                       color:#fff;
+                       padding: 0;
+                   }
+                    a{
+                        text-decoration:none;
+                        color:#fff;
+                    }
+                    >ul{
+                        li{
+                            margin-bottom: 10px;
+                        }
+                    }
+               }
+            }
+        }
+    }    
+
